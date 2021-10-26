@@ -1,5 +1,5 @@
 body{
-    background-color: #252525;
+    background-color: #2b2929;
 }
 *{
     margin: 0;
@@ -74,6 +74,9 @@ body{
 }
 
 /* ===== IMAGEN CARRUSEL ===== */
+#asnik{
+    color: #2b2929;
+}
 article{
     padding-top: 80px;
 }
