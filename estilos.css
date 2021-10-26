@@ -155,6 +155,13 @@ section{
     width: 70%;
 }
 
+.imgs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
 .contenedor_contenido, h2 {
     color: rgb(94, 94, 94);
     font-size: 40px;
