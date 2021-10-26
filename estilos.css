@@ -7,7 +7,9 @@ body{
     box-sizing: border-box;
  }
 
-header{
+ /* ===== BARRA DE NAVEGACION ===== */
+
+ header{
     background-color: #000000;
 }
 
@@ -21,12 +23,16 @@ header{
 }
 
 .nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
     height: 120px;
     background-color:#17181C;
     text-align: left;
 }
 
 .nav-ul{
+    position: fixed;
     list-style: none;
     display: inline-block;
     padding:18px;
@@ -43,11 +49,12 @@ header{
     font-weight: normal;
     font-family:Arial, Helvetica, sans-serif ;
     text-decoration: none;
-    font-size: 25px;
-    padding: 12px;
+    font-size: 20px;
+    padding: 21px;
     display: inline-block;
     position: relative;
 }
+
 .nav-ul-li-a:after {
     content: "";
     display: block;
@@ -55,7 +62,7 @@ header{
     height: 2px;
     width: 2px;
     transition: all .5s;
-    }
+}
 
 .nav-ul-li-a:hover{
     color: rgb(238, 140, 12);
@@ -65,9 +72,269 @@ header{
     width: 100%;
     background: rgb(238, 140, 12);
 }
-.imagenes{
-    margin-top: 3%;
 
-    height: auto;
-    width: 40%;
-  }
+/* ===== IMAGEN CARRUSEL ===== */
+article{
+    padding-top: 80px;
+}
+
+.imagen-carrusel{
+    display: grid;
+    grid-template-columns:repeat(1, auto) ;
+    justify-content: center;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+/* ===== ESTILOS SECTION ===== */
+section{
+    background-color:rgb(223, 223, 223);
+}
+
+/* ===== CONTENEDOR EMPRESA ===== */
+.contenedor_empresa {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    gap: 10px;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contenedor_empresa h2 {
+    color: rgb(82, 82, 82);
+    font-size: 40px;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    text-align: center;    
+}
+
+.contenedor_empresa h3 {
+    width: 350px;
+    color: rgb(94, 94, 94);
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    text-align: center;  
+}
+
+.contenedor_empresa p{
+    color: rgb(82, 82, 82);
+    font-size: 17px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* ===== CONTENEDOR CONTENIDO =====*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,10px);
+    gap: 400px;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contenedor_contenido{
+    background-color: whitesmoke;
+    width: 350px;
+    box-shadow: 0 0 8px 8px #c5c5c5;
+}
+
+.imagenes {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.contenedor_contenido, h2 {
+    color: rgb(94, 94, 94);
+    font-size: 40px;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    text-align: center;    
+}
+
+
+.contenedor_contenido h3 {
+    color: rgb(94, 94, 94);
+    font-size: 20px;
+    padding-top: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    text-align: center;    
+}
+
+.contenedor_contenido h4 {
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+    padding-top: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    text-align: center;    
+}
+
+.contenedor_contenido p{
+    color: rgb(82, 82, 82);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ===== CONTENEDOR VIDEO ===== */
+
+
+.my-video{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 120px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #c5c5c5;
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+
+ /* ===== FOOTER CONTACTO ===== */
+
+
+
+ footer h2{
+    color: rgb(248, 248, 248);
+    font-size: 40px;
+    padding-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+ 
+}
+
+.contenedor_contacto{
+    display: grid;
+    grid-template-columns: repeat(2,340px);
+    gap: 300px;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.info_contacto{
+    color: #c5c5c5;
+}
+
+.info_contacto h3{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.info_contacto h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.info_contacto p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+#parrafo{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+}
+
+#parrafo2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+}
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+ 
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#ffffff;
+    border:2px solid #292929;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#383838;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #292929;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1; /* Firefox */
+}
+ 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #292929;
+    opacity: 1;
+}
+ 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #292929;
+}
+ 
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #292929;
+}
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+.map_img{
+    width: 100%;
+    height: 100%;
+}
