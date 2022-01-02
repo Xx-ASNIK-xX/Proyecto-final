@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/9083Sin título-4.ico">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <title>ASNIK</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <nav class="nav">
             <div>
 
-                <img class="logo" src="img/logo.png">
+                <img class="logo" src="img/logo.png" alt="logo ASNIK">
 
             </div>
 
@@ -29,7 +29,7 @@
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla1">Inicio</a></li>
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla2">Empresa</a></li>
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla3">Productos</a></li>
-                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#">Promociones</a></li>
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla4">Diversión</a></li>
                 <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla5">Contacto</a></li>
 
             </ul>
@@ -42,7 +42,11 @@
         <div class="imagen-carrusel">
             <h1 id="asnik">ASNIK</h1>
 
-            <img alt="Esta imagen esta relacionada asnik sociedad anonima" class="imagenes" src="img/foto-principal.png">
+       
+
+                <iframe class="SVG" src="img/logoAnimado.svg" >
+            
+                </iframe>   
 
             <div id="ancla2"> </div>
 
@@ -63,12 +67,6 @@
                 segmentos y mercados corporativos.Nuestro objetivo es ofrecer 
                 soluciones, permitiendo a las empresas decidir cual es el mejor 
                 software que atiende sus necesidades.</p>
-            <div class="getc">
-                <h1>llamada a la API</h1>
-                <button class="getFact">😸</button>
-                <div class="factContainer"></div>
-                <script src="app.js"></script>
-            </div>
         </div>
     </section><!-- finaliza la section de empresa-->
 
@@ -136,7 +134,7 @@
                     potenciales clientes. Conocé nuestros 
                     planes y elegí el tuyo.
                 </p>
-                <div id="ancla5"> </div>
+                
             </div>
 
         </div>
@@ -145,8 +143,20 @@
     
     <section><!-- empieza la sección de promociones-->
 
+
+        <div class="contenedor_diversion">
+            <div id="ancla4"> </div>
+            <div class="getc">
+                <h2>llamada a la API</h2>
+                <button class="getFact">😸</button>
+                <div class="factContainer"></div>
+            </div>
+            <div id="ancla5"> </div>
+        </div>
+        
+
     </section><!-- finaliza la sección de promociones-->
-    
+
     <footer><!-- empieza el footer-->
         
         <h2>CONTACTO</h2>;
@@ -172,12 +182,12 @@
 
             <form>
                     
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" name="nombre" placeholder="Nombre completo">
+                <label for="nombre" >Nombre:</label>
+                <input id="nombre" name="nombre" placeholder="Nombre completo" required>
                 <label for="email">Email:</label>
-                <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+                <input id="email" name="email" type="email" placeholder="ejemplo@email.com" required>
+                <label for="mensaje" >Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje" required></textarea>
                 <input id="submit" name="submit" type="submit" value="Enviar">
 
             </form>
@@ -193,6 +203,7 @@
     <script src="/js/frases.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/js/menu.js" type="module"></script>
+    
     
 </body>
 </html>

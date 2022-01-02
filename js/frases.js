@@ -11,7 +11,7 @@ document.querySelector('.getFact').onclick = () => {
             fact.innerHTML = data.fact;
             let el = document.getElementsByClassName('factContainer')[0];
             el.prepend(fact);
-            
+
         })
 }
 
