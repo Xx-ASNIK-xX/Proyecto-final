@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilos.css">
+    
     <link rel="shortcut icon" type="image/x-icon" href="img/9083Sin título-4.ico">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <title>ASNIK</title>
@@ -17,7 +18,23 @@
     <header>
     
         <div id="ancla1"> </div>
+
         <nav class="nav">
+            <div class="navicon open">
+                <img class="logo" src="img/logo.png" alt="logo ASNIK">
+                <div></div>
+            </div>
+            
+            <ul class="navigation open">
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla1">Inicio</a></li>
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla2">Empresa</a></li>
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla3">Productos</a></li>
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla4">Diversión</a></li>
+                <li class="nav-ul-li"><a class="nav-ul-li-a" href="#ancla5">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- <nav class="nav">
             <div>
 
                 <img class="logo" src="img/logo.png" alt="logo ASNIK">
@@ -34,7 +51,7 @@
 
             </ul>
 
-        </nav>
+        </nav> -->
 
     </header>
     <article> <!-- principio del articulo de carrusel-->
@@ -145,14 +162,28 @@
 
 
         <div class="contenedor_diversion">
-            <div id="ancla4"> </div>
-            <div class="getc">
-                <h2>llamada a la API</h2>
-                <button class="getFact">😸</button>
-                <div class="factContainer"></div>
-            </div>
-            <div id="ancla5"> </div>
+            <h2>API DE GATOS</h2>
+            <div class="container align-content-center justify-content-center text-center d-flex flex-column">
+                
+                    <iframe id="cat-img" class="img-thumbnail" src="img/gatitoAnimado.svg" scrolling="no">
+                    
+                    </iframe>
+                    
+                
+                    <br />
+                    <p id="cat-fact" class="text-center">API de Gatos</p>
+                    <br />
+                    <div class="flex-row text-center align-content-center justify-content-center">
+                        <button id="getBtn" class="btn btn-primary" onclick="getImg()">
+                            Sabias que??
+                        </button>
+                        <p></p>
+                    </div>
+		    </div>
+                
         </div>
+                <div id="ancla5"> </div>
+        
         
 
     </section><!-- finaliza la sección de promociones-->
