@@ -263,15 +263,8 @@ button:focus {
     outline:0;
 }
 
-.factContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    
-}
-
 .btn {
+    
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -296,6 +289,7 @@ button:focus {
   }
   
   .btn-primary:hover {
+    cursor: url(https://cdn.custom-cursor.com/db/10115/32/mochi-mochi-peach-cat-and-bubble-tea-pointer.png), pointer;
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc;
