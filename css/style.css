@@ -196,7 +196,7 @@ a:focus {
     .navbar .navbar-brand {
         color: #ffffff;
     }
-    
+     
     .navbar.nav-sticky .navbar-brand {
         color: #F98702;
     }
@@ -237,7 +237,10 @@ a:focus {
         padding: 15px;
         background: #ffffff !important;
     }
-    
+
+    .container-fluid{
+        flex-direction: row-reverse;
+     }
     .navbar .navbar-brand {
         color: #F98702;
     }
