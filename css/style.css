@@ -178,6 +178,10 @@ a:focus {
 .navbar.nav-sticky .navbar-brand #logo {
     content: url("../img/logo2color.png"); /* Logo cuando la barra cambia */
 }
+
+.ml-auto2, .mx-auto {
+    margin-left: 32%;
+}
 @media (min-width: 992px) {
     .navbar {
         position: absolute;
