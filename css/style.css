@@ -139,6 +139,8 @@ a:focus {
     z-index: 999;
 }
 
+
+
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
